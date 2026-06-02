@@ -145,7 +145,7 @@ The project includes:
 ### Sample Visualization
 
 ```markdown
-![Risk Distribution](visuals/02_risk_category_distribution.png)
+(visuals/02_risk_category_distribution.png)
 ```
 
 ---
