@@ -252,6 +252,6 @@ Dataset used for educational and portfolio purposes with proper citation.
 
 Computer Engineer | Data Analytics & AI Enthusiast
 
-GitHub: [Your GitHub Profile]
+GitHub: https://github.com/samiurrabbialexme-max/
 
-LinkedIn: [Your LinkedIn Profile]
+LinkedIn: https://www.linkedin.com/in/samiurrabbialex/
