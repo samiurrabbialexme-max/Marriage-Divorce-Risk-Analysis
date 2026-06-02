@@ -144,8 +144,6 @@ The project includes:
 
 ### Sample Visualization
 
-Add screenshots inside the `visuals/` folder and display them here:
-
 ```markdown
 ![Risk Distribution](visuals/02_risk_category_distribution.png)
 ```
