@@ -248,7 +248,7 @@ Dataset used for educational and portfolio purposes with proper citation.
 
 ## Author
 
-**Alex**
+**Samiur Rabbi Alex**
 
 Computer Engineer | Data Analytics & AI Enthusiast
 
