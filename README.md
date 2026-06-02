@@ -1,194 +1,124 @@
-```
-# Marriage & Divorce Risk Analysis Using SQL and Python
-```
+# Marriage & Divorce Risk Analysis using SQL and Python
 
-## `## Project Overview` 
+![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20Matplotlib-blue)
+![SQL](https://img.shields.io/badge/SQL-Data%20Analysis-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-```
-This project analyzes a marriage and divorce dataset containing relationship,
-social, economic, and behavioral indicators associated with divorce probability.
-```
+## Project Overview
 
-```
-The objective is to explore the dataset using SQL and Python, identify important
-factors influencing divorce risk, and communicate findings through
-visualizations and analytical reports.
-```
+This project explores a Marriage & Divorce dataset containing relationship, social, economic, and behavioral indicators associated with divorce probability.
 
-```
+The objective is to identify factors influencing divorce risk using SQL and Python, perform exploratory data analysis (EDA), engineer meaningful features, and communicate findings through data visualizations and analytical reporting.
+
 ---
-```
 
-## `## Dataset Information` 
+## Project Goals
 
-```
-Dataset Source:
-```
+* Analyze relationship factors associated with divorce probability.
+* Perform data exploration using SQL.
+* Conduct exploratory data analysis using Python.
+* Develop custom relationship metrics through feature engineering.
+* Generate actionable insights from the dataset.
+* Demonstrate end-to-end data analytics workflow.
 
-```
+---
+
+## Dataset Information
+
+### Source
+
 Mousavi, S. M. H., MiriNezhad, S. Y., & Lyashenko, V.
-```
 
-```
-An Evolutionary-Based Adaptive Neuro-Fuzzy Expert System as a Family Counselor
-Before Marriage with the Aim of Divorce Rate Reduction (2017)
-```
+**An Evolutionary-Based Adaptive Neuro-Fuzzy Expert System as a Family Counselor Before Marriage with the Aim of Divorce Rate Reduction (2017)**
 
-```
 ### Dataset Characteristics
-```
 
-- `Records: 100` 
+| Attribute       | Value                     |
+| --------------- | ------------------------- |
+| Records         | 100                       |
+| Features        | 30                        |
+| Target Variable | Divorce Probability       |
+| Domain          | Relationship Analytics    |
+| Analysis Type   | Exploratory Data Analysis |
 
-- `Features: 30` 
-
-- `Target Variable: Divorce Probability` 
-
-```
 ---
-```
 
-## `## Tools Used` 
+## Tools & Technologies
 
-## `### SQL` 
+### SQL
 
-- `Data exploration` 
+* Data Exploration
+* Aggregation
+* Filtering
+* Grouping
+* Window Functions
+* Analytical Queries
 
-- `Aggregation` 
+### Python
 
-- `Filtering` 
-
-- `Grouping` 
-
-- `Window functions` 
-
-- `Analytical queries` 
-
-## `### Python` 
-
-```
 * Pandas
-```
+* NumPy
+* Matplotlib
 
-- `NumPy` 
-
-- `Matplotlib` 
-
-```
 ### Development Environment
-```
 
-- `Jupyter Notebook` 
+* Jupyter Notebook
+* VS Code
+* Git
+* GitHub
 
-- `VS Code` 
-
-- `Git` 
-
-- `GitHub` 
-
-```
 ---
-```
 
-```
 ## Project Workflow
+
+```text
+Data Collection
+      ↓
+Data Cleaning
+      ↓
+SQL Analysis
+      ↓
+Exploratory Data Analysis
+      ↓
+Feature Engineering
+      ↓
+Data Visualization
+      ↓
+Insight Generation
+      ↓
+Reporting
 ```
 
-`1. Data Collection` 
-
-`2. Data Cleaning` 
-
-`3. SQL Analysis` 
-
-`4. Exploratory Data Analysis` 
-
-`5. Feature Engineering` 
-
-`6. Data Visualization` 
-
-`7. Insight Generation` 
-
-`8. Reporting` 
-
-```
 ---
-```
 
-```
 ## Feature Engineering
-```
 
-```
 ### Risk Category
-```
 
-```
-Records were categorized into:
-```
+Divorce probability was categorized into:
 
-- `Low Risk * Medium Risk * High Risk` 
+| Category    | Condition |
+| ----------- | --------- |
+| Low Risk    | < 1.7     |
+| Medium Risk | 1.7 – 2.3 |
+| High Risk   | > 2.3     |
 
-```
-based on divorce probability.
-```
-
-```
 ### Relationship Health Score
-```
 
-```
-A custom score was created using:
-```
+A custom metric was created using:
 
-```
 * Love
-```
+* Commitment
+* Loyalty
+* Mental Health
+* Self Confidence
 
-- `Commitment` 
+This score provides a simplified representation of overall relationship quality.
 
-- `Loyalty` 
-
-- `Mental Health` 
-
-- `Self Confidence` 
-
-```
 ---
-```
 
-## `## Visualizations` 
+## Dataset Summary
 
-```
-The project includes:
-```
-
-- `Divorce Probability Distribution` 
-
-- `Divorce Risk Category Distribution` 
-
-- `Average Divorce Probability by Risk Group` 
-
-- `Relationship Health Score Analysis` 
-
-- `Love vs Divorce Probability` 
-
-- `Commitment vs Divorce Probability` 
-
-- `Relationship Factor Comparison` 
-
-- `Correlation Analysis` 
-
-```
----
-```
-
-## `## Key Findings` 
-
-```
-### Dataset Summary
-```
-
-```
 | Metric                      | Value |
 | --------------------------- | ----- |
 | Total Records               | 100   |
@@ -196,95 +126,132 @@ The project includes:
 | High Risk Records           | 40    |
 | Medium Risk Records         | 31    |
 | Low Risk Records            | 29    |
-```
 
-## `### Insights` 
-
-`1. Approximately 40% of observations belong to the high-risk category.` 
-
-`2. Relationship quality indicators such as love, commitment, and loyalty provide valuable information regarding divorce probability.` 
-
-`3. Relationship Health Score offers an interpretable summary measure of` 
-
-```
-relationship strength.
-```
-
-```
-4. Social and economic compatibility variables contribute to relationship
-outcomes.
-```
-
-```
 ---
+
+## Visualizations
+
+The project includes:
+
+* Divorce Probability Distribution
+* Divorce Risk Category Distribution
+* Average Divorce Probability by Risk Group
+* Relationship Health Score Analysis
+* Love vs Divorce Probability
+* Commitment vs Divorce Probability
+* Relationship Factor Comparison
+* Correlation Analysis
+
+### Sample Visualization
+
+Add screenshots inside the `visuals/` folder and display them here:
+
+```markdown
+![Risk Distribution](visuals/02_risk_category_distribution.png)
 ```
 
-```
+---
+
+## Key Findings
+
+### 1. High Divorce Risk Segment
+
+Approximately 40% of observations belong to the high-risk category.
+
+### 2. Relationship Quality Matters
+
+Love, commitment, and loyalty provide valuable information regarding divorce probability.
+
+### 3. Relationship Health Score
+
+The engineered Relationship Health Score offers an interpretable summary measure of relationship strength.
+
+### 4. Social and Economic Factors
+
+Economic similarity, income, and social compatibility contribute to relationship outcomes.
+
+### 5. Divorce Is Multifactorial
+
+No single feature explains divorce probability. Relationship outcomes are influenced by multiple emotional, behavioral, and socio-economic variables.
+
+---
+
 ## Example SQL Query
-```
 
-```
 ```sql
-```
-
-```
 SELECT
     AVG(`Divorce Probability`) AS avg_divorce_probability
 FROM marriage_divorce_db;
 ```
 
-```
-```
-```
-
-```
 ---
-```
 
-```
 ## Repository Structure
-```
 
-```
 ```text
-data/
-sql/
-python/
-notebooks/
-visuals/
-reports/
-```
+Marriage-Divorce-Risk-Analysis/
+│
+├── data/
+├── sql/
+├── python/
+├── notebooks/
+├── visuals/
+├── reports/
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── .gitignore
 ```
 
-```
 ---
-```
 
-```
 ## Future Improvements
-```
 
-- `Predictive modeling using Machine Learning` 
+* Machine Learning Models
+* Feature Importance Analysis
+* SHAP Explainability
+* Predictive Divorce Risk Scoring
+* Larger Relationship Datasets
+* Interactive Dashboard Development
 
-- `Feature importance analysis` 
-
-- `Explainable AI (SHAP)` 
-
-- `Interactive dashboards` 
-
-- `Larger-scale relationship datasets` 
-
-```
 ---
-```
 
-## `## Author` 
+## Skills Demonstrated
 
-```
-Alex
-```
+* SQL Analytics
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Data Visualization
+* Statistical Interpretation
+* Technical Reporting
+* Git & GitHub
 
-```
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Dataset Citation
+
+Mousavi, S. M. H., MiriNezhad, S. Y., & Lyashenko, V.
+
+*An Evolutionary-Based Adaptive Neuro-Fuzzy Expert System as a Family Counselor Before Marriage with the Aim of Divorce Rate Reduction* (2017).
+
+Dataset used for educational and portfolio purposes with proper citation.
+
+---
+
+## Author
+
+**Alex**
+
 Computer Engineer | Data Analytics & AI Enthusiast
-```
 
+GitHub: [Your GitHub Profile]
+
+LinkedIn: [Your LinkedIn Profile]
